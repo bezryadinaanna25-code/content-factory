@@ -12,7 +12,7 @@
 
 Открыть Claude Code в папке `контент/` и попросить агента:
 
-> «Напиши пост для Telegram. Тема: ...»
+> «Напиши пост для Telegram и ВКонтакте. Тема: ...»
 
 Агент сохранит файл в `контент/posts/` в формате:
 ```
@@ -21,7 +21,7 @@ YYYY-MM-DD-название-social-content.json
 
 **Шаг 2 — Проверить пост**
 
-Открыть файл, прочитать текст в блоке `platforms → telegram → content`.  
+Открыть файл, прочитать текст в блоках `platforms → telegram → content` и `platforms → vk → content`.  
 Если нужно исправить — отредактировать прямо в файле.
 
 **Шаг 3 — Опубликовать**
@@ -60,7 +60,7 @@ python publish.py
 ![Пост в Telegram](screenshots/06-telegram-post.jpg)
 
 **8. Опубликованный пост ВКонтакте**  
-![Пост ВКонтакте](screenshots/07-vk-post.jpg)
+![Пост ВКонтакте](screenshots/08-vk-post.jpg)
 
 **9. Архивный файл — подтверждение публикации**  
 ![Архивный файл](screenshots/10-archive-file.jpg)
